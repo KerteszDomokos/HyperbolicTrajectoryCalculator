@@ -8,14 +8,17 @@ Verzió:v1.1
 import math as mt
 
 print('Start the hyperbolic function datas calculator - Kertész Domokos 2021')
+
+print('Example datas (for more see the example dictionary): rp=1.6, l=4.5, x=1.052, y=6.24')
+
 #request values - see the example datas dictionary
 try:
-    rp=float(input ('R0 = '))
+    rp=float(input ('R0 (use . not ,) = '))
 except:
     print('Error in inpu')
     rp=0
 try:
-    l=float(input('l = '))
+    l=float(input('l (use . not ,) = '))
 except:
     print('Error in input')
     l=0
@@ -36,7 +39,7 @@ print("'c' value\t",c)
 
 #load the x val
 try:
-    x=float(input('x koordináta ellenőrzés: '))
+    x=float(input('x coordinate (use . not ,): '))
 except:
     print('Error in inpu')
     x=0
