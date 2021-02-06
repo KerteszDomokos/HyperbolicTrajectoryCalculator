@@ -50,5 +50,14 @@ print('  Results coordinates')
 print('x:\t',x)
 print('y:\t(+-)~',y)
 
+inp=input ('If you know the y coordinate write this here (if not press enter):')
+if inp!='':
+    real_y=float(inp)
+    delta=mt.sqrt((y-real_y)**2)
+    sz=delta/real_y*100
+    print('Error different %:\t', round(sz,1),'%')
+    print('Error different:\t', delta)
 
-#6.1 
+print('\nA kimenet pontossága nagyon függ a bevitt adatok, pontosságától, és a pontok szórásától!')
+
+input('end')
